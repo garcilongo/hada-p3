@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="library/library.csproj" />
+  <Project Path="proWeb/proWeb.csproj" />
+</Solution>
