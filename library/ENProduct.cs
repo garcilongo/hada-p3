@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace library
 {
-    internal class ENProduct
+    public class ENProduct
     {
         private string _code;
         private string _name;
@@ -104,6 +104,7 @@ namespace library
             this.Amount = amount;
             this.Category = category;
             this.CreationDate = creationDate;
+            this.Price = price;
 
         }
 
