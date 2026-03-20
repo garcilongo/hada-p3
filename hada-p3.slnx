@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="library/library.csproj" />
-  <Project Path="proWeb/proWeb.csproj" />
+  <Project Path="library/library.csproj" Id="2fedd2e3-0753-460c-9d04-e22a948aa13d" />
+  <Project Path="proWeb/proWeb.csproj" Id="f676941a-b25d-4783-af3e-c353101e486d" />
 </Solution>

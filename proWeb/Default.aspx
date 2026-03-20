@@ -1,44 +1,55 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="proWeb._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="proWeb._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
+        <h1> <b> Product management </b></h1>
 
         <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+            Code
+           <asp:TextBox ID="Code" runat="server" TextMode="SingleLine" Width="300px"></asp:TextBox>
         </div>
+
+        <div class="row">
+            Name
+            <asp:TextBox ID="Name" runat="server" TextMode="SingleLine" Width="300px"></asp:TextBox>
+        </div>
+
+
+        <div class="row">
+            Amount
+            <asp:TextBox ID="Amount" runat="server" TextMode="Number" Width="125px"></asp:TextBox>
+        </div>
+
+        <div class="row">
+            Category
+            <asp:DropDownList ID="ddlCategory" runat="server" Width="200px"></asp:DropDownList>
+        </div>
+
+        <div class="row">
+            Price
+            <asp:TextBox ID="Price" runat="server" TextMode="Number" Width="125px"></asp:TextBox>
+        </div>
+
+        <div class="row">
+            Creation Date
+            <asp:TextBox ID="Date" runat="server" TextMode="Date" Width="175px"></asp:TextBox>
+        </div>
+
+        <br />
+
+        <asp:Button ID="Create" runat="server" Text="Create" OnClick="BtnCreate_Click"/>
+        <asp:Button ID="Update" runat="server" Text="Update" OnClick="BtnUpdate_Click"/>
+        <asp:Button ID="Delete" runat="server" Text="Delete" OnClick="BtnDelete_Click"/>
+        <asp:Button ID="Read" runat="server" Text="Read" OnClick="BtnRead_Click"/>
+        <asp:Button ID="ReadFirst" runat="server" Text="Read First" OnClick="BtnReadFirst_Click"/>
+        <asp:Button ID="ReadPrev" runat="server" Text="Read Prev" OnClick="BtnReadPrev_Click"/>
+        <asp:Button ID="ReadNext" runat="server" Text="Read Next" OnClick="BtnReadNext_Click"/>
+
+        <br /><br />
+
+
+        
     </main>
 
 </asp:Content>
