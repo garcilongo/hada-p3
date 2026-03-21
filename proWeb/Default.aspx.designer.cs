@@ -7,12 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace proWeb
-{
+namespace proWeb {
 
 
-    public partial class _Default
-    {
+    public partial class _Default {
 
         /// <summary>
         /// Control Code.
@@ -130,5 +128,14 @@ namespace proWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ReadNext;
+
+        /// <summary>
+        /// Control LblMessage.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMessage;
     }
 }

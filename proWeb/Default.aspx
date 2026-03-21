@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <main>
-        <h1> <b> Product management </b></h1>
+        <h1> <b> Products management </b></h1>
 
         <div class="row">
             Code
@@ -18,7 +18,7 @@
 
         <div class="row">
             Amount
-            <asp:TextBox ID="Amount" runat="server" TextMode="Number" Width="125px"></asp:TextBox>
+            <asp:TextBox ID="Amount" runat="server" TextMode="SingleLine" Width="125px"></asp:TextBox>
         </div>
 
         <div class="row">
@@ -28,7 +28,7 @@
 
         <div class="row">
             Price
-            <asp:TextBox ID="Price" runat="server" TextMode="Number" Width="125px"></asp:TextBox>
+            <asp:TextBox ID="Price" runat="server" TextMode="SingleLine" Width="125px"></asp:TextBox>
         </div>
 
         <div class="row">
@@ -47,8 +47,7 @@
         <asp:Button ID="ReadNext" runat="server" Text="Read Next" OnClick="BtnReadNext_Click"/>
 
         <br /><br />
-
-
+        <asp:Label ID="LblMessage" runat="server" Text=""></asp:Label>
         
     </main>
 
