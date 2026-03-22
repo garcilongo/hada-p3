@@ -7,3 +7,5 @@
 /library/obj/Debug
 /proWeb/bin
 /proWeb/obj/Debug
+/proWeb/App_Data/*.mdf
+/proWeb/App_Data/*.ldf
