@@ -45,9 +45,11 @@ namespace proWeb {
                 LblMessage.Text = "Error: ya existe un producto con ese Code.";
                 return;
             }
-            if (en.Create())
+            if (en.Create()) {
                 LblMessage.Text = "Producto creado correctamente.";
-            else
+                ClearForm();
+
+            } else
                 LblMessage.Text = "Error al crear el producto.";
         }
 
@@ -112,6 +114,15 @@ namespace proWeb {
                 LblMessage.Text = "Producto siguiente leído correctamente.";
             } else
                 LblMessage.Text = "Error: no hay producto siguiente.";
+        }
+
+        private void ClearForm() {
+            Code.Text = "";
+            Name.Text = "";
+            Amount.Text = "";
+            Price.Text = "";
+            Date.Text = "";
+            ddlCategory.SelectedIndex = 0;
         }
     }
 }
